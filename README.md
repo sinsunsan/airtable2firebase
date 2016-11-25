@@ -2,20 +2,21 @@
 
 ### What is airtable 
 
-Airtable is a mix between spreadheet, and a relation database, with user friendlyness as first design objective. 
+Airtable is a mix between spreadheet and a relation database, with user friendlyness as first design objective. 
 https://airtable.com/
 
 ### Why Airtable API is not enough to serve an app 
 
 Airtable is great as a user friendly CMS like backend.
-It has an api but this api is not purposed to serve apps with lot's of traffic.
-Also the stucture of the data especially the related table are not very useful to display related information 
-The query syntax is limited... 
-It is not possible to set access right to access the data, so this authentication part need to be performed by a backend somewhere.
+It has an api but : 
+* this api is not purposed to serve apps with lot's of traffi (limited to 5 query / seconds)
+* Also the stucture of the data especially the related tables are not very useful to display related information, without performing a new query.
+* The query syntax is limited... 
+* It is not possible to set access right to limit access to the data. So this authentication part need to be performed by a backend somewhere.
 
 ### What is firebase 
 
-Firebase is an PAAS product adding commonly used features like real time database, cloud  messaging, authentication.. to prevent developers to lose time reinventing wheel. 
+Firebase is an PAAS product adding commonly used features like real time database, cloud messaging, authentication.. to prevent developers to lose time reinventing wheel. 
 https://firebase.google.com
 
 ### Why Firebase is great
@@ -34,6 +35,25 @@ This authentication is called "rules" in firebase.
 
 ### Changes are visibe in real time
 
-Thanks to a web sockets like technology, changes are "pushed" to the frontend  in real time allowing to get changes in real time. Great for messaging, collaborative, meetings apps !
+Thanks to a web sockets like technology, changes are "pushed" to the frontend in real time allowing to get changes in real time. Great for messaging, collaborative, meetings apps !
+
+
+### Why using airtable + firebase together
+
+Because airtable is a great ui, user friendly app to enter the data, and start to bootstrap a product without technicall overhead 
+Whereas firebase is great for performance and to prevent spending time in common backend functionnality. 
+
+### What airtable2firebase can do 
+
+Airtable2Firebase is a node.js exemple synchronisation script that read Airtable data and save it to firebase in a way that can be easily requested by a front end.
+
+### What does airtable2firebase contain
+
+* a configuration file that define which airtable tables to import from which base
+* a configuration file to define firebase project and credential to use 
+* import options 
+   * If the record exist in firebase / Does to update data from airtable at reimport ?
+   * ...
+* The script will use airtable records ids to prevent creating duplicates in firebase 
 
 
