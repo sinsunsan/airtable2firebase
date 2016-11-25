@@ -47,7 +47,7 @@ Whereas firebase is great for performance and to prevent spending time in common
 
 Airtable2Firebase is a node.js exemple synchronisation script that read Airtable data and save it to firebase in a way that can be easily requested by a front end.
 
-### What does airtable2firebase contain
+### What does airtable2firebase will contain (developement in progress)
 
 * a configuration file that define which airtable tables to import from which base
 * a configuration file to define firebase project and credential to use 
