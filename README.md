@@ -14,7 +14,7 @@ The development is in progress, so be patient or help us to develop it !
 * The script will use airtable records ids to prevent creating duplicates in firebase 
 * the script  will use node js micro service architecture using a starter like https://github.com/ph0bos/express-microservice-starter
 
-## Why Airable + Firebase
+## Why Airtable + Firebase
 
 Because airtable is a great ui, user friendly app to enter the data, and start to bootstrap a product without technicall overhead 
 Whereas firebase is great for performance and to prevent spending time in common backend functionnality. 
