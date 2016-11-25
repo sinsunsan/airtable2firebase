@@ -1,4 +1,23 @@
-# Airtable 2 firebase conversion 
+# Airtable 2 firebase synchronisation micro-service 
+
+Airtable2Firebase is a node.js  synchronisation script that read Airtable data and save it to firebase in a way that can be easily requested by a front end.
+
+The development is in progress, so be patient or help us to develop it !
+
+## Key features (developement in progress)
+
+* a configuration file that define which airtable tables to import from which base
+* a configuration file to define firebase project and credential to use 
+* import options 
+   * If the record exist in firebase / Does to update data from airtable at reimport ?
+   * ...
+* The script will use airtable records ids to prevent creating duplicates in firebase 
+* the script  will use node js micro service architecture using a starter like https://github.com/ph0bos/express-microservice-starter
+
+## Why Airable + Firebase
+
+Because airtable is a great ui, user friendly app to enter the data, and start to bootstrap a product without technicall overhead 
+Whereas firebase is great for performance and to prevent spending time in common backend functionnality. 
 
 ### What is airtable 
 
@@ -37,23 +56,5 @@ This authentication is called "rules" in firebase.
 
 Thanks to a web sockets like technology, changes are "pushed" to the frontend in real time allowing to get changes in real time. Great for messaging, collaborative, meetings apps !
 
-
-### Why using airtable + firebase together
-
-Because airtable is a great ui, user friendly app to enter the data, and start to bootstrap a product without technicall overhead 
-Whereas firebase is great for performance and to prevent spending time in common backend functionnality. 
-
-### What airtable2firebase can do 
-
-Airtable2Firebase is a node.js exemple synchronisation script that read Airtable data and save it to firebase in a way that can be easily requested by a front end.
-
-### What does airtable2firebase will contain (developement in progress)
-
-* a configuration file that define which airtable tables to import from which base
-* a configuration file to define firebase project and credential to use 
-* import options 
-   * If the record exist in firebase / Does to update data from airtable at reimport ?
-   * ...
-* The script will use airtable records ids to prevent creating duplicates in firebase 
 
 
