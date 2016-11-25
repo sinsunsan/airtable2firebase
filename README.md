@@ -52,7 +52,7 @@ users/21
 Each part of the json tree can be tested for authentication 
 This authentication is called "rules" in firebase.
 
-### Changes are visibe in real time
+### Changes are visible in real time
 
 Thanks to a web sockets like technology, changes are "pushed" to the frontend in real time allowing to get changes in real time. Great for messaging, collaborative, meetings apps !
 
